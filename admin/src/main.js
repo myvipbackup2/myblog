@@ -30,10 +30,10 @@ const router = new VueRouter({
 		// {path: '/classify', component: classify},
 		// {path: '/label', component: label},
 	]
-})
+});
 
 new Vue({
   	el: '#app',
   	router: router,
   	render: h => h(App)
-})
+});

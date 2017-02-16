@@ -10,7 +10,7 @@ var resolve = file => path.resolve(__dirname, file);
 app.use('/dist', express.static(resolve('./dist')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(router)
+app.use(router);
 
 // 后台管理页
 app.get('/admin', function(req, res) {
